@@ -1,0 +1,141 @@
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --muted:#6b7280;
+  --accent:#2b7cff;
+  --accent-2:#0b7a5f;
+  --card:#f8fafc;
+  --wrap:1100px;
+  --radius:10px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;margin:0;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:24px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.site-header{position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(4px);border-bottom:1px solid #eee;z-index:40}
+.logo{font-weight:700;margin:0;font-size:1.1rem}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+.nav a:hover{color:var(--text);background:#f1f5f9}
+.cta{background:var(--accent);color:#fff;padding:8px 12px}
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.2rem;padding:8px}
+
+/* HERO */
+.hero{padding:48px 0;background:linear-gradient(180deg,#f7fbff,#ffffff)}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center}
+.hero h2{font-size:2rem;margin:0 0 8px}
+.hero p{margin:0 0 16px;color:var(--muted)}
+.hero-image img{width:100%;height:auto;border-radius:12px;object-fit:cover;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+
+/* SECTIONS */
+.section{padding:40px 0}
+.section.alt{background:#fbfcfe}
+.section-grid{display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:start}
+.highlight{background:var(--card);padding:18px;border-radius:12px}
+.cards{display:flex;gap:16px;flex-wrap:wrap}
+.card{flex:1 1 220px;background:var(--card);padding:18px;border-radius:12px}
+
+/* FEATURES */
+.features{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery-item{background:#fff;border:0;padding:0;border-radius:8px;overflow:hidden;cursor:pointer}
+.gallery-item img{width:100%;height:170px;object-fit:cover;display:block}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;padding:24px;z-index:60}
+.lightbox img{max-width:90%;max-height:85%;border-radius:8px}
+.lb-close{position:absolute;top:18px;right:18px;background:transparent;border:0;color:#fff;font-size:1.6rem}
+
+/* TEAM */
+.team{display:flex;gap:16px;flex-wrap:wrap}
+.member{background:var(--card);padding:12px;border-radius:12px;text-align:center;flex:1 1 180px}
+.member img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+/* TESTIMONIALS */
+.testimonials{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.testimonials blockquote{background:#fff;padding:16px;border-radius:12px;margin:0;border-left:4px solid var(--accent);color:var(--muted)}
+
+/* PRICING */
+.pricing{display:flex;gap:16px;flex-wrap:wrap}
+.price-card{background:#fff;padding:18px;border-radius:12px;flex:1 1 220px;text-align:center;border:1px solid #f0f2f6}
+.price-card.featured{border:2px solid var(--accent);transform:translateY(-4px)}
+.price{font-size:1.4rem;font-weight:700;margin:8px 0}
+
+/* CONTACT */
+.contact-form{max-width:700px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-form label{display:block;margin-bottom:12px;font-size:0.95rem}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border:1px solid #e6e9ef;border-radius:8px;margin-top:6px}
+
+/* FOOTER */
+.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:24px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.social a{margin-left:8px;color:var(--muted);text-decoration:none}
+
+/* BUTTONS */
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid #e6f0ff}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  .hero-inner{grid-template-columns:1fr; text-align:center}
+  .hero-image{order:-1}
+  .section-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .testimonials{grid-template-columns:1fr}
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:absolute;top:64px;right:24px;background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(16,24,40,0.08)}
+  .nav-toggle{display:inline-block}
+}
+@media (max-width:520px){
+  .gallery{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+}
+````markdown name=README.md
+```markdown
+# Casa‑Sam — Versión ampliada para GitHub Pages
+
+Esta plantilla es una página única (single-page) con múltiples secciones: Hero, Sobre, Servicios, Características, Galería, Equipo, Testimonios, Precios, FAQ y Contacto.
+
+Instrucciones rápidas para publicar en GitHub Pages (100% gratis):
+
+1. Crear el repositorio
+   - Para publicar en https://casasam.github.io crea un repo con el nombre `CasaSam.github.io`.
+   - Si prefieres publicar en https://<tu-usuario>.github.io/casa-sam crea `casa-sam` y activa Pages (Settings → Pages).
+
+2. Añadir archivos
+   - Crea `index.html` y pega el contenido provisto.
+   - Crea `styles.css` y pega el CSS provisto.
+   - Crea `README.md` con estas instrucciones (opcional).
+
+3. Añadir imágenes
+   - Crea una carpeta `images` en el repo y sube imágenes con estos nombres (o cambia las rutas en el HTML):
+     - hero.jpg (imagen principal)
+     - photo1.jpg … photo6.jpg (imágenes originales)
+     - photo1-thumb.jpg … photo6-thumb.jpg (miniaturas; si no las tienes, puedes copiar las mismas)
+     - team1.jpg, team2.jpg, team3.jpg (fotos del equipo)
+   - Si no añades imágenes, los elementos mostrarán cuadros vacíos; puedes usar imágenes de placeholder mientras tanto.
+
+4. Formulario de contacto
+   - El formulario usa Formspree (servicio gratuito para formularios estáticos).
+   - Regístrate en https://formspree.io y crea un formulario: recibirás un ID que debes reemplazar en `index.html` en la acción del <form> (reemplaza `YOUR_FORM_ID`).
+
+5. Publicar
+   - Si usas `CasaSam.github.io` se publicará automáticamente en minutos.
+   - Si usas otro repo, ve a Settings → Pages y selecciona rama `main` y carpeta `/(root)`.
+
+6. Editar contenido
+   - Puedes editar desde el navegador usando el botón "Add file" → "Edit file" o presionar `.` en el repo para abrir el editor en modo VS Code.
+   - Cada commit actualiza la web automáticamente.
+
+7. Mejoras opcionales (gratis)
+   - Añadir favicon (favicon.ico) y meta tags sociales (Open Graph).
+   - Añadir analytics simples (por ejemplo, Plausible, o Google Analytics si lo deseas).
+   - Añadir un CNAME si tienes un dominio (si en el futuro compras uno).
+
+Soporte
+- Si quieres, puedo:
+  - Guiarte paso a paso mientras creas el repo (te digo exactamente qué pulsar).
+  - Preparar imágenes de ejemplo y darte enlaces listos para descargar.
+  - Modificar textos, colores, secciones o añadir nuevas funcionalidades una vez esté publicada.
