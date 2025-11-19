@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Casa‑Sam — Tu espacio, tu estilo</title>
+  <meta name="description" content="Casa‑Sam — Servicios y espacios personalizados. Descubre nuestros servicios, galería, equipo y contacta con nosotros." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <h1 class="logo">Casa‑Sam</h1>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="site-nav" class="nav-toggle">☰</button>
+      <nav id="site-nav" class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#galeria">Galería</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#precios">Precios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto" class="cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h2>Bienvenido a Casa‑Sam</h2>
+          <p>Diseñamos y adaptamos espacios pensados para ti. Calidad, trato cercano y resultados que te encantarán.</p>
+          <p class="hero-actions">
+            <a href="#servicios" class="btn">Ver servicios</a>
+            <a href="#contacto" class="btn ghost">Solicitar presupuesto</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="images/hero.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="wrap section">
+      <div class="section-grid">
+        <div>
+          <h3>Sobre Casa‑Sam</h3>
+          <p>Casa‑Sam es un proyecto dedicado a ofrecer soluciones completas para tu hogar: desde asesoría de diseño hasta ejecución. Nuestro objetivo: espacios funcionales, estéticos y creados a tu medida.</p>
+        </div>
+        <div class="highlight">
+          <h4>Valores</h4>
+          <ul>
+            <li>Transparencia</li>
+            <li>Calidad</li>
+            <li>Atención personalizada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="wrap section alt">
+      <h3>Servicios</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Diseño de interiores</h4>
+          <p>Propuestas personalizadas con planos, paleta de colores y selección de materiales.</p>
+        </article>
+        <article class="card">
+          <h4>Renovaciones</h4>
+          <p>Reformas parciales o integrales con gestión de obra y seguimiento completo.</p>
+        </article>
+        <article class="card">
+          <h4>Asesoría y compra</h4>
+          <p>Te acompañamos en la elección de mobiliario y acabados según tu presupuesto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="caracteristicas" class="wrap section">
+      <h3>Características</h3>
+      <ul class="features">
+        <li><strong>Atención personalizada:</strong> propuestas adaptadas a tu estilo.</li>
+        <li><strong>Presupuestos claros:</strong> sin sorpresas.</li>
+        <li><strong>Plazos cumplidos:</strong> coordinación y control de obra.</li>
+      </ul>
+    </section>
+
+    <section id="galeria" class="wrap section alt">
+      <h3>Galería</h3>
+      <p class="muted">Haz clic en una imagen para ampliarla. Añade tus propias fotos en /images (photo1.jpg … photo6.jpg)</p>
+      <div class="gallery">
+        <button class="gallery-item" data-src="images/photo1.jpg"><img src="images/photo1-thumb.jpg" alt="Foto 1" /></button>
+        <button class="gallery-item" data-src="images/photo2.jpg"><img src="images/photo2-thumb.jpg" alt="Foto 2" /></button>
+        <button class="gallery-item" data-src="images/photo3.jpg"><img src="images/photo3-thumb.jpg" alt="Foto 3" /></button>
+        <button class="gallery-item" data-src="images/photo4.jpg"><img src="images/photo4-thumb.jpg" alt="Foto 4" /></button>
+        <button class="gallery-item" data-src="images/photo5.jpg"><img src="images/photo5-thumb.jpg" alt="Foto 5" /></button>
+        <button class="gallery-item" data-src="images/photo6.jpg"><img src="images/photo6-thumb.jpg" alt="Foto 6" /></button>
+      </div>
+      <div id="lightbox" class="lightbox" hidden>
+        <button id="lb-close" class="lb-close" aria-label="Cerrar">✕</button>
+        <img id="lb-image" src="" alt="" />
+      </div>
+    </section>
+
+    <section id="equipo" class="wrap section">
+      <h3>Equipo</h3>
+      <div class="team">
+        <div class="member">
+          <img src="images/team1.jpg" alt="Foto de Ana" />
+          <h4>Ana López</h4>
+          <p>Diseñadora principal</p>
+        </div>
+        <div class="member">
+          <img src="images/team2.jpg" alt="Foto de Marco" />
+          <h4>Marco Ruiz</h4>
+          <p>Coordinación de obra</p>
+        </div>
+        <div class="member">
+          <img src="images/team3.jpg" alt="Foto de Lucía" />
+          <h4>Lucía Pérez</h4>
+          <p>Asesora de materiales</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="wrap section alt">
+      <h3>Testimonios</h3>
+      <div class="testimonials">
+        <blockquote>
+          <p>"Excelente trabajo, cumplió los plazos y el resultado superó expectativas."</p>
+          <footer>— Marta R.</footer>
+        </blockquote>
+        <blockquote>
+          <p>"Profesionalidad y cercanía. Recomendados 100%."</p>
+          <footer>— Carlos M.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="precios" class="wrap section">
+      <h3>Precios (ejemplos)</h3>
+      <div class="pricing">
+        <div class="price-card">
+          <h4>Básico</h4>
+          <p class="price">€200</p>
+          <ul>
+            <li>Consulta inicial</li>
+            <li>Propuesta básica</li>
+          </ul>
+          <a href="#contacto" class="btn">Contactar</a>
+        </div>
+        <div class="price-card featured">
+          <h4>Completo</h4>
+          <p class="price">€800</p>
+          <ul>
+            <li>Propuesta detallada</li>
+            <li>Gestión de compra</li>
+            <li>Seguimiento obra</li>
+          </ul>
+          <a href="#contacto" class="btn">Solicitar presupuesto</a>
+        </div>
+        <div class="price-card">
+          <h4>Premium</h4>
+          <p class="price">A medida</p>
+          <ul>
+            <li>Servicio integral</li>
+            <li>Prioridad en ejecución</li>
+          </ul>
+          <a href="#contacto" class="btn">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="wrap section alt">
+      <h3>Preguntas frecuentes</h3>
+      <details>
+        <summary>¿Cómo solicito presupuesto?</summary>
+        <p>Rellena el formulario de contacto o envíanos un email. Te responderemos con una propuesta en 48h.</p>
+      </details>
+      <details>
+        <summary>¿Trabajáis fuera de la ciudad?</summary>
+        <p>Depende del proyecto; consulta disponibilidad en el formulario.</p>
+      </details>
+    </section>
+
+    <section id="contacto" class="wrap section contact-section">
+      <h3>Contacto</h3>
+      <p>Puedes enviarnos un mensaje usando el formulario o escribir a <a href="mailto:contacto@casasam.example">contacto@casasam.example</a>.</p>
+
+      <!-- Formspree: registra tu formulario y reemplaza YOUR_FORM_ID -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="two-col">
+          <label>
+            Nombre
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <label>
+          Asunto
+          <input type="text" name="subject" />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <small>© <span id="year"></span> Casa‑Sam</small>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navToggle = document.getElementById('nav-toggle');
+    const siteNav = document.getElementById('site-nav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      siteNav.classList.toggle('open');
+    });
+
+    const lightbox = document.getElementById('lightbox');
+    const lbImage = document.getElementById('lb-image');
+    const lbClose = document.getElementById('lb-close');
+
+    document.querySelectorAll('.gallery-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-src');
+        lbImage.src = src;
+        lightbox.hidden = false;
+        lbClose.focus();
+      });
+    });
+
+    lbClose.addEventListener('click', () => {
+      lightbox.hidden = true;
+      lbImage.src = '';
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.hidden) {
+        lightbox.hidden = true;
+        lbImage.src = '';
+      }
+    });
+  </script>
+</body>
+</html>
